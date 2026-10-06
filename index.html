@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Creator Toolkit - Generate YouTube and Shorts titles, hooks and thumbnail ideas.">
+  <title>AI Creator Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#"><span>AI</span> CREATOR TOOLKIT</a>
+    <a class="nav-link" href="#generator">Try Tool</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">⚡ AI POWERED CREATOR TOOL</div>
+      <h1>Create <span>better content.</span><br>Grow faster.</h1>
+      <p>Generate scroll-stopping titles, hooks and thumbnail ideas for your next video.</p>
+      <a class="cta" href="#generator">START CREATING <b>→</b></a>
+    </section>
+
+    <section id="generator" class="tool-card">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">CONTENT GENERATOR</div>
+          <h2>What are you creating?</h2>
+        </div>
+        <div class="status"><i></i> READY</div>
+      </div>
+
+      <label for="topic">VIDEO TOPIC</label>
+      <textarea id="topic" placeholder="e.g. 5 amazing facts about Japan"></textarea>
+
+      <div class="grid">
+        <div>
+          <label for="platform">PLATFORM</label>
+          <select id="platform">
+            <option>YouTube Shorts</option>
+            <option>YouTube</option>
+            <option>TikTok</option>
+            <option>Instagram Reels</option>
+          </select>
+        </div>
+        <div>
+          <label for="tone">TONE</label>
+          <select id="tone">
+            <option>Curiosity</option>
+            <option>Viral</option>
+            <option>Professional</option>
+            <option>Dark / Mysterious</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generate" class="generate">GENERATE IDEAS <span>✦</span></button>
+      <p id="error" class="error"></p>
+    </section>
+
+    <section id="results" class="results hidden">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">AI RESULTS</div>
+          <h2>Your content pack</h2>
+        </div>
+        <button id="copyAll" class="small-btn">COPY ALL</button>
+      </div>
+      <div id="resultGrid"></div>
+    </section>
+
+    <section class="features">
+      <div><strong>01</strong><h3>Titles</h3><p>Clickable titles designed around curiosity and clarity.</p></div>
+      <div><strong>02</strong><h3>Hooks</h3><p>Strong opening lines to stop the scroll.</p></div>
+      <div><strong>03</strong><h3>Thumbnails</h3><p>Short thumbnail text ideas that match the topic.</p></div>
+    </section>
+  </main>
+
+  <footer>© 2026 AI Creator Toolkit · Built for creators</footer>
+  <script src="script.js"></script>
+</body>
+</html>
